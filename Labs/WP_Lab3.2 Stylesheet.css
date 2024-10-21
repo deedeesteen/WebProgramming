@@ -1,0 +1,18 @@
+body{
+	background: mistyrose;
+}
+
+table{
+	border: 2px solid midnightblue;
+	color: midnightblue;
+	font-family: "Lucida Sans Unicode", "Lucida Grande";
+	background: lightsalmon;
+}
+
+th, td{
+	border: 1px solid midnightblue;
+}
+
+h2{
+	font-family: "Comic Sans MS", cursive;
+}
