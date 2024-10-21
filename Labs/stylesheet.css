@@ -1,0 +1,17 @@
+body{
+	color: green;
+	font-family: verdana, arial, geneva, arial, black;
+	font-weight: normal;
+}
+
+h1, h2{
+	border-bottom: 1px solid black;
+}
+
+h2{
+	color: blue;
+}
+
+p{
+	color: red;
+}
