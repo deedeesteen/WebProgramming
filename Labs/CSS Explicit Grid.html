@@ -1,0 +1,38 @@
+<!--Programmer: Dhana Steen
+	Class: Monday, 9-11am-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Grid Columns</title>
+		<style type="text/css">
+			.item
+			{
+				/*Center the contents of the grid items. Making each grid item a Flex Container*/
+				display: flex;
+				
+				/*Horizontal and Vertical centering*/
+				justify-content: center;
+				align-items: center;
+				border: 5px solid #87b5ff;
+			}
+			
+			.grid-container
+			{
+				display: grid;
+				grid-template-columns: 1fr 2fr 1fr;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="grid-container">
+			<div class="item">Box 1</div>
+			<div class="item">Box 2</div>
+			<div class="item">Box 3</div>
+			<div class="item">Box 4</div>
+			<div class="item">Box 5</div>
+			<div class="item">Box 6</div>
+		</div>
+	</body>
+</html>
