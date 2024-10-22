@@ -1,0 +1,66 @@
+<!--Programmer: Dhana Steen
+	Class: Monday, 9-11am
+	Assignment: Week 6, Lab 3-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login/Register</title>
+		<style>
+			div.login
+			{
+				float: left;
+				margin: 30px;
+			}
+			
+			div.register
+			{
+				float: left;
+				margin: 5px;
+			}
+			
+			button
+			{
+				border: none;
+				text-align: center;
+				border-radius: 8px;
+				padding: 10px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="login">
+			<form action="" method="">
+				<fieldset>
+					<legend>Login</legend>
+					Username or e-mail address* <br>
+					<input type="text" name="usrn_email" size="80" required> <br>
+					Password* <br>
+					<input type="password" name="passwrd" size="80" required> <br> <br>
+					<button>Login</button>
+					<input type="checkbox" name="" checked="checked"> Remember me <br>
+					<a href="lostpassword.html">Lost your password?</a>
+				</fieldset>
+			</form>
+		</div>
+		
+		<div class="register">
+			<form action="" method="">
+				<fieldset>
+					<legend>Registration</legend>
+					Phone <br>
+					<input type="text" name="phone" size="80"> <br>
+					First Name* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Last Name* <br>
+					<input type="text" name="fname" size="20" required> &nbsp; &nbsp; <input type="text" name="lname" size="20" required> <br>
+					E-mail address* <br>
+					<input type="text" name="email" size="80" placeholder="example: someone@gmail.com" required> <br>
+					Password* <br>
+					<input type="password" name="passwrd" size="80" required> <br> <br>
+					<button disabled>Register</button>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
