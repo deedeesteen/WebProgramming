@@ -1,0 +1,89 @@
+<!--Programmer: Dhana Steen
+	Class: Monday, 9-11am
+	Tutor: Ms C. Anuli
+	CSS Grid and Media Query Forum
+	Questions:
+	1. The default (*screen size greater than 600px) grid layout is 4 columns with a gap of 10px; the background color of the web page is light green.
+	2. Screen sizes up to 600px changes the background color of the web page to light blue; and the grid layout changes to 2 columns with a grid gap of 5px.
+	3. Screen sizes up to 320px changes the background color of the web page to yellow; and the grid layout changes to 1 column with a grid gap of 2px.-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.box
+			{
+				border: 2px solid red;
+			}
+
+			<!--=========== Question 1 =================-->
+			@media only screen and (min-width: 600px)
+			{
+				body
+				{
+					background-color: lightgreen;
+				}
+			
+				.grid-container
+				{
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+					grid-gap: 10px;
+				}
+			}
+			
+			<!--=========== Question 2 =================-->
+			@media only screen and (max-width: 600px)
+			{
+				body
+				{
+					background-color: lightblue;
+				}
+			
+				.grid-container
+				{
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-gap: 5px;
+				}
+			}
+
+			<!--=========== Question 3 =================-->
+			@media only screen and (max-width: 320px)
+			{
+				body
+				{
+					background-color: yellow;
+				}
+			
+				.grid-container
+				{
+					display: grid;
+					grid-template-columns: 1fr;
+					grid-gap: 2px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="grid-container">
+			<div class="box">
+				Box 1
+			</div>
+
+			<div class="box">
+				Box 2
+			</div>
+
+            <div class="box">
+				Box 3
+			</div>
+
+			<div class="box">
+				Box 4
+			</div>
+		</div>
+	</body>
+</html>
