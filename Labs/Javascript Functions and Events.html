@@ -1,0 +1,43 @@
+<!--Programmer: Dhana Steen
+	ID#: 1803365
+	Class: Monday, 9-11am-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Week 10 - Javascript Functions and Events</title>
+	</head>
+	
+	<body>
+		<script>
+			alert('Hello everyone!');
+			
+			function showMessage()
+			{
+				let message = "Hello, I'm Javascript!"; //Local Variable
+				alert(message);
+			}
+			
+			showMessage(); //Hello, I'm Javascript
+			alert(message); //<-- Error! The variable is local to the function
+
+			let userName = 'John'; //Global Variable
+
+			function showMessage2()
+			{
+				let message1 = 'Hello, ' + userName;
+				alert(message1);
+			}
+			
+			showMessage2();
+			
+			function showMessage3(from, text) // arguments: from, text
+			{
+				alert(from + ': ' + text);
+			}
+
+			showMessage3('Ann', 'Hello!'); // Ann: Hello! (*)
+			showMessage3('Ann', "What's up?"); // Ann: What's up? (**)
+		</script>
+	</body>
+</html>
