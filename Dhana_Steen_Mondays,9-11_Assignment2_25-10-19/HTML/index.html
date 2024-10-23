@@ -1,0 +1,55 @@
+<!--Programmer: Dhana Steen
+	Class: Monday, 9-11am
+	Assignment #2-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CP Ellingham High School Report System</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Dhana Steen">
+		<meta name="description" content="CP Ellingham High School Report System Login">
+		<meta name="keywords" content="CP Ellingham High School, Report">
+		<style>
+			body
+			{
+				background-image: url("../Images/25883186.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				font-family: "Courier New", Courier;
+				padding: 200px;
+			}
+			
+			div
+			{
+				 padding: 20px;
+			}
+		</style>
+		
+		<script src="../Javascript/login.js" type = "text/javascript"></script>
+	</head>
+	
+	<body>
+		<form id="logform" method="post">
+			<fieldset>
+				<legend>Login</legend>
+				<div>
+					Username: <br>
+					<input type="text" name="username" id="username" size="60" placeholder="example: someone_2" required />
+				
+					<br> <br>
+				
+					Password: <br>
+					<input type="password" name="psword" id="psword" size="60" required />
+				
+					<br> <br>
+				
+					<input type="button" value="Login" id="submit" onclick="validate()"/>
+				</div>
+			</fieldset>
+		</form>
+		
+		<br> <br> <br>
+		&copy; CP Ellingham High School
+	</body>
+</html>
