@@ -1,0 +1,237 @@
+<!--Programmer: Dhana Steen
+	Class: Monday, 9-11am
+	Assignment #2-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CP Ellingham High School Report Card</title>
+		<link href="../CSS/reportcard stylesheet.css" rel="stylesheet" type="text/css">
+		<style>
+			table
+			{
+				border: 2px solid black;
+				font-family: "Courier New", Courier;
+			}
+			
+			th
+			{
+				border: 2px solid black;
+				background: lavender;
+			}
+			
+			td
+			{
+				border: 2px solid black;
+				background: white;
+			}
+		</style>
+		
+		<script src="../Javascript/grade.js" type = "text/javascript"> </script>
+		<script>			
+			function gradeAlert()
+			{
+				if (document.getElementById("test1").value > 100)
+				{
+					if (document.getElementById("test1").value < 0)
+					{
+						alert("Incorret: Percentage is between 0 & 100");
+					}
+				}
+				
+				if (document.getElementById("test2").value > 100)
+				{
+					if (document.getElementById("test2").value < 0)
+					{
+						alert("Incorret: Percentage is between 0 & 100");
+					}
+				}
+					
+				if (document.getElementById("finals").value > 100)
+				{
+					if (document.getElementById("finals").value < 0)
+					{
+						alert("Incorret: Percentage is between 0 & 100");
+					}
+				}
+			}
+			
+			function Saving()
+			{
+				var sname = document.getElementById("sname").value;
+				var idnum = document.getElementById("idnum").value;
+				alert("Saving information for: "+ sname + ":" +idnum)
+			}
+			
+			function Emailing()
+			{
+				let pemail = document.getElementById("pemail").value;
+				var link = "mailto:" + email +"?cc=info@cpe.edu.ag&Subject=Report%20Card%20Is%20Ready&body=Please%20See%20Attachment";
+				window.location.href = link;
+			}
+					
+			function Exiting()
+			{
+				window.location = "../HTML/index.html";
+			}
+		</script>
+	</head>
+	
+	<body>
+		<center> <header>
+			<h2> <i>REPORT CARD</i> </h2>
+			<h3>CP ELLINGHAM HIGH SCHOOL</h3>
+			<h5>760 Cooper Street,<br>Agawan, MA 00101,<br> Phone: (555) 999-0001, Email: info@cpe.edu.org</h5>
+		</header> </center>
+		
+		<br>
+		
+		<form id="form1">
+			<br>
+			Date &nbsp; &nbsp; <input type="date" name="date" required> <br> <br>
+			Parent's Name &nbsp; <input type="text" name="pname" required> <br> <br>
+			Parent's Email &nbsp; <input type="text" name="pemail" placeholder="someone@gmail.com" required> <br> <br>
+			Grade / Room &nbsp; <input type="text" name="room" required> <br> <br>
+			School Days &nbsp; <input type="text" name="days" required> <br> <br>
+			Days Absent &nbsp; <input type="text" name="absent" required>
+		</form>
+		
+		<br>
+		
+		<form id="form2">
+			Student's Name &nbsp; &nbsp; &nbsp; <input type="text" name="sname" required> <br> <br>
+			Identification (ID) # &nbsp; <input type="text" name="idnum" required> <br> <br>
+			Parent's Telephone # &nbsp; <input type="text" name="phonenum" placeholder="(555) 999-2222"  required> <br> <br>
+			Semester / Year &nbsp; &nbsp; <input type="text" name="semyear" placeholder="01-2019" required> <br> <br>
+			Days Present &nbsp; &nbsp; <input type="text" name="present" required> <br> <br>
+			<label>Advisor</label> &nbsp;  &nbsp; &nbsp;
+			<select name="advisor">
+				<option value="anuli">C. Anuli</option>
+				<option value="white">D. White</option>
+				<option value="meeks">R. Meeks</option>
+				<option value="facey">L. Facey-Shaw</option>
+				<option value="march">M. March</option>
+			</select>
+		</form>
+		
+		<br>
+		<br>
+		
+		<div class="grid-container">
+			<table>
+				<tr>
+					<th>Subject</th>
+					<th>Test 1 (%)</th>
+					<th>Test 2 (%)</th>
+					<th>Finals (%)</th>
+					<th>Letter Grade</th>
+				</tr>
+		
+				<tr>
+					<td>Math</td>
+					<td> <input type="text" name="math1" id="test1" required onchange="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="math2" id="test2" required onchange="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="mathf" id="finalg" required onchange="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="mathlg" id="letterg" readonly /> </td>
+				</tr>
+		
+				<tr>
+					<td>English</td>
+					<td> <input type="text" name="eng1" id="test1" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="eng2" id="test2" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="engf" id="finalg" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="englg" id="letterg" readonly /> </td>
+				</tr>
+			
+				<tr>
+					<td>Science</td>
+					<td> <input type="text" name="science1" id="test1" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="science2" id="test2" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="sciencef" id="finalg" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="sciencelg" id="letterg" readonly /> </td>
+				</tr>
+			
+				<tr>
+					<td>History</td>
+					<td> <input type="text" name="history1" id="test1" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="history2" id="test2" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="historyf" id="finalg" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="historylg" id="letterg" readonly /> </td>
+				</tr>
+	
+				<tr>
+					<td>Economics</td>
+					<td> <input type="text" name="econ1" id="test1" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="econ2" id="test2" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="econf" id="finalg" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="econlg" id="letterg" readonly /> </td>
+				</tr>
+			
+				<tr>
+					<td>Literature</td>
+					<td> <input type="text" name="lit1" id="test1" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="lit2" id="test2" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="litf" id="finalg" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="litlg" id="letterg" readonly /> </td>
+				</tr>
+			
+				<tr>
+					<td>Music</td>
+					<td> <input type="text" name="music1" id="test1" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="music2" id="test2" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="musicf" id="finalg" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="musiclg" id="letterg" readonly /> </td>
+				</tr>
+		
+				<tr>
+					<td>PE</td>
+					<td> <input type="text" name="pe1" id="test1" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="pe2" id="test2" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="pef" id="finalg" required oninput="gradeAlert(); calculations()"/> </td>
+					<td> <input type="text" name="pelg" id="letterg" readonly /> </td>
+				</tr>
+			</table>
+		</div>
+	
+		<br> <br>
+		
+		<div class="container">
+			<div>
+				<form>
+					<fieldset>
+						<legend>Notes</legend>
+						<textarea rows="10" cols="73" required> </textarea>
+					</fieldset>
+				</form>
+			</div>
+		
+			<div id="space">
+				<table>
+					<tr>
+						<th colspan="3">GRADING SCALE</th>
+					</tr>
+				
+					<tr>
+						<td>A = 90% - 100%</td>
+						<td>B+ = 80% - 89%</td>
+						<td>B = 70% - 79%</td>
+					</tr>
+			
+					<tr>
+						<td>C+ = 60% - 69%</td>
+						<td>C = 50% - 59%</td>
+						<td>D = 0% - 49%</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<br>
+		
+		<center> <div>
+			<form action="" method="">
+				<button type="reset" value="reset">Cancel</button> &nbsp; &nbsp; <button type="button" onclick="Saving()">Save</button> &nbsp; &nbsp; <button type="button" onclick="Emailing()">Email</button> &nbsp; &nbsp; <button type="button" onclick="Exiting()">Exit</button>
+			</form>
+		</div> </center>
+	</body>
+</html>
