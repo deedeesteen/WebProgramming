@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lab Test #2</title>
+        <style>
+        td{
+            border: 1px solid green;
+            padding: 5px;
+            height: 25px;          
+        }
+
+        </style>
+		
+		<script type="text/javascript" src="_WP_LabTest2_Nov2019.js"></script>
+    </head>
+    <body>
+        <center> 
+            Name: Dhana Steen
+            <br>
+            Day/Time of Class: Mon @ 9am
+        <table>
+            <col width ="180px">
+            <tr><h3>Circle Calculator</h3></tr>
+            <tr>
+                <td> Radius </td>
+                <td> <input type="text" size="25px" id="radius" min="1" placeholder="enter a number"> </td>
+                <td> <select id="area_circum" onclick="Display()">
+                        <option value="area">area</option>
+                        <option value="circumference">circumference</option>
+                    </select></option>
+                </select>
+                </td>
+                
+            </tr>
+           
+            <tr width="45px" id="result">
+                <td > <p id="resTxt"> = </p> </td>
+                <td colspan="2">  
+                    <p id="answer">...</p>
+                </td>  
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <input type="submit" value="Calculate" id="calcBtn" style="background-color:blue; color: white;" onclick="Calculate()">
+                    <input type="submit" value="Cancel" id="cancelBtn" style="background-color: darkorange; color: white;" onclick="Cancel()">
+                   
+                </td>  
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Formula <input type="text" id="formula" size="40px"> </input></>
+                </td>
+            </tr>
+        </table>
+    </center>
+    </body>
+</html>
