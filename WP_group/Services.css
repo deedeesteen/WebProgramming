@@ -1,0 +1,172 @@
+body{
+	margin: 0 auto;
+	padding: 0;
+}
+
+.heading{
+	margin: 0 auto;
+	padding: 0;
+	border: 1px solid white;
+	height: 500px;
+	background-image: url("Images/services.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.heading h1{
+	text-align: center;
+	margin-top: 5%;
+	font-size: 100px;
+	font-family: 'Prata', serif;
+	color: #F13C20;
+}
+
+.heading p{
+	padding: 20px;
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
+}
+
+#serviceContent{
+	position: relative;
+	height: 1300px;
+	border-top: 2px solid #F13C20;
+}
+
+#serviceContent img{
+	height: 300px;
+	width: 100%;
+	border-bottom: 1px solid #F13C20;
+}
+
+#request{
+	width: 100%;
+	height: 30px;
+	background-color: #F13C20;
+	border: none;
+	color: white;
+	font-family: 'Prata', serif;
+	cursor: pointer;
+}
+
+#request:hover{
+	background-color: white;
+	color: #F13C20;
+}
+
+#request2{
+	width: 100%;
+	height: 30px;
+	background-color: #F13C20;
+	border: none;
+	color: white;
+	font-family: 'Prata', serif;
+	cursor: pointer;
+}
+
+#request2:hover{
+	background-color: white;
+	color: #F13C20;
+}
+
+#request3{
+	width: 100%;
+	height: 30px;
+	background-color: #F13C20;
+	border: none;
+	color: white;
+	font-family: 'Prata', serif;
+	cursor: pointer;
+}
+
+#request3:hover{
+	background-color: white;
+	color: #F13C20;
+}
+
+#service{
+	font-family: 'Prata', serif;
+}
+
+#serviceInfo{
+	font-family: 'Lato', sans-serif;
+}
+
+#booking{
+	color: white;
+	font-size: 15px;
+}
+
+.service1{
+	border: 1px solid #242582;
+	width: 500px;
+	margin: 20px 0 0 20px;
+	height: 600px;
+	background-color: #C5CBE3;
+	position: absolute;
+	top: 0;
+	left: 10%;
+}
+
+.service2{
+	border-top: 2px solid #242582;
+	width: 500px;
+	margin: 20px 0 0 20px;
+	height: 600px;
+	background-color: #C5CBE3;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+.service3{
+	border: 1px solid #242582;
+	width: 500px;
+	margin: 20px 0 0 20px;
+	height: 600px;
+	background-color: #C5CBE3;
+	position: absolute;
+	top: 48%;
+	left: 30%;
+}
+
+.request_ser{
+	background-color: rgb(197,203,227,0.6);
+	position: absolute;
+	top: 0;
+	height: 2000px;
+	width: 1349px;
+	display: none;
+}
+
+.request_form{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	background-color: #F13C20;
+	margin: 20px;
+	padding: 20px;
+}
+
+#close{
+	position: absolute;
+	transform: rotate(45deg);
+	font-size: 25px;
+	left: 90%;
+	cursor: pointer;
+}
+
+.request_form button{
+	height: 40px;
+	width: 200px;
+	background-color: #C5CBE3;
+	color: white;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+
+.request_form button:hover{
+	background-color: white;
+	color: #F13C20;
+}

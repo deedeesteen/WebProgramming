@@ -1,0 +1,160 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.sec1{
+	margin: 0;
+	position: relative;
+	border: 2px solid #F13C20;
+	height: 500px;
+	background-image: url("Images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#slogan{
+	color: red;
+	position: absolute;
+	top: 10%;
+	left: 15%;
+	font-size: 100px;
+	font-family: 'Prata', serif;
+	letter-spacing: 10px;
+	color: #242582;
+}
+
+#be{
+	font-family: 'Prata', serif;
+	font-size: 30px;
+}
+
+#unique{
+	font-size: 50px;
+	letter-spacing: 15px;
+	border: 2px solid;
+	position: absolute;
+	top: 130px;
+	left: 22%;
+	animation: animate 10s linear infinite;
+	font-family: 'Prata', serif;
+}
+
+@keyframes animate{
+	0%,50%{
+		color: #242582;
+	}
+	50%,100%{
+		color: #F64C72;
+	}
+}
+.be{
+	color: white;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 5px;
+}
+
+.content{
+	position: relative;
+	height: 700px;
+	background-image: url("welcome.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content img{
+	height: 90px;
+	margin-top: 70px;
+}
+
+.contentWrap{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(36,37,130, 0.8)
+}
+
+.welcome{
+	border: 1px solid #F13C20;
+	background-color: #F13C20;
+	width: 900px;
+	height: 500px;
+	position: absolute;
+	top: 10%;
+	left: 15%;
+	margin-bottom: 20px;
+}
+
+#welcomeMsg{
+	color: black;
+	font-family: 'Prata', serif;
+}
+
+.welcome p{
+	margin: 20px;
+	font-size: 25px;
+	padding: 10px;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+#questions{
+	width: 100%;
+	cursor: pointer;
+	height: 50px;
+	background: none;
+	border: 2px solid white;
+	color: white;
+}
+
+#questions:hover{
+	background-color: white;
+	color: #242582;
+}
+
+.feedback{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	border: 1px solid;
+	display: none;
+	background-color: blue;
+}
+
+#feedback_form{
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	background-color: #F13C20;
+	margin: 20px;
+	padding: 20px;
+	height: 500px;
+	width: 300px;
+}
+
+#close{
+	position: absolute;
+	transform: rotate(45deg);
+	font-size: 25px;
+	left: 90%;
+	top: 10px;
+	cursor: pointer;
+}
+
+#feedback_form button{
+	height: 40px;
+	width: 200px;
+	background-color: #C5CBE3;
+	color: white;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+
+#feedback_form button:hover{
+	background-color: white;
+	color: #F13C20;
+}
