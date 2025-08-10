@@ -1,0 +1,65 @@
+<!--Programmer: Dhana Steen
+	Class: Monday, 9-11am-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Week 9 Task C2</title>
+	</head>
+	
+	<body>
+		<p>Task C part 2</p>
+		<script>
+			//part 2
+			let num1 = Math.floor(Math.random() * 60) + 1;
+			document.writeln("1st Number: " + num1 + "<br>"); 
+
+			let num2 = Math.floor(Math.random() * 60) + 1;
+			document.writeln("2nd Number: " + num2 + "<br> <br>");
+			
+			//ADDITION
+			sum = num1 + num2;
+			document.writeln(num1 + " + " + num2 + " = " + sum + "<br> <br>");
+			
+			//SUBTRACTION
+			if (num1 >= num2)
+			{
+				diff = num1 - num2;
+				document.writeln(num1 + " - " + num2 + " = " + diff + "<br> <br>");
+			}
+			else
+			{
+				diff = num2 - num1;
+				document.writeln(num2 + " - " + num1 + " = " + diff + "<br> <br>");
+			}
+			
+			//DIVISION
+			if (num1 >= num2)
+			{
+				divide = num1 / num2;
+				document.writeln(num1 + " /" + num2 + " = " + divide + "<br> <br>");
+			}
+			else
+			{
+				divide = num2 / num1;
+				document.writeln(num2 + " / " + num1 + " = " + divide + "<br> <br>");
+			}
+			
+			//MULTIPLICATION
+			product = num1 * num2;
+			document.writeln(num1 + " * " + num2 + " = " + product + "<br> <br>");
+			
+			//MODULO
+			if (num1 >= num2)
+			{
+				mod = num1 % num2;
+				document.writeln(num1 + " MOD " + num2 + " = " + mod + "<br> <br>");
+			}
+			else
+			{
+				mod = num2 % num1;
+				document.writeln(num2 + " MOD " + num1 + " = " + mod);
+			}
+		</script>
+	</body>
+</html>

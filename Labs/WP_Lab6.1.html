@@ -1,0 +1,110 @@
+<!--Programmer: Dhana Steen
+	Class: Monday, 9-11am
+	Assignment: Week 6, Lab 1-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ABC Hotel Reservation</title>
+		<style>
+			div.title
+			{
+				color: cornflowerblue;
+				width: 300px;
+				border: 2px solid cornflowerblue;
+				padding: 3px;
+				margin: 10px;
+			}
+			
+			div.guest
+			{
+				float: left;
+				padding-top: 2px;
+				padding-right: 2px;
+				padding-bottom: 2px;
+				padding-left: 2px;
+				margin: 5px;
+				overflow: hidden;
+			}
+			
+			div.room
+			{
+				float: left;
+				padding-top: 2px;
+				padding-right: 2px;
+				padding-bottom: 2px;
+				padding-left: 2px;
+				margin: 15px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<center> <div class="title">
+			<h2>ABC Hotel Reservation</h2>
+		</div> </center>
+		<p>3/25/2009</p>
+		<br>
+		
+		<div class="guest">
+			<form action="" method="">
+				<fieldset>
+					<legend>Guest Information</legend>
+					First Name: &nbsp; <input type="text" name="fname" size="80"> <br>
+					Last Name: &nbsp; <input type="text" name="lname" size="80"> <br> <br>
+					Address 1: &nbsp; <input type="text" name="address" size="80"> <br>
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="address" size="80"> <br>
+					Address 2: &nbsp; <input type="text" name="address" size="80"> <br>
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="address" size="80"> <br>
+					City: <input type="text" name="address" size="80"> <br>
+					State: <input type="text" name="address" size="80"> <br>
+					Zip: <input type="text" name="address" size="80"> <br> <br>
+					Phone: <input type="text" name="phone" size="80"> <br>
+					Email: <input type="text" name="email" size="80"> <br>
+				</fieldset>
+			</form>
+		</div>
+		
+		<div class="room">
+			<form action="" method="">
+				<fieldset>
+					<legend>Room Information</legend>
+					Number of Adult Guests: &nbsp <input type="text" name="fname" size="10" value="0"> <br>
+					Number of Child Guests: &nbsp <input type="text" name="lname" size="10" value="0"> <br> <br>
+					<label>Room Type:</label>
+					<select name="RoomType">
+						<option value="choice" selected>Choose One</option>
+						<option value="stans">Standard Single</option>
+						<option value="stand">Standard Double</option>
+						<option value="msuite">Master Suite</option>
+						<option value="jsuite">Junior Suite</option>
+					</select>
+					<br>
+					<br>
+					Check-in Date: &nbsp <input type="text" name="indate" size="20" value="0"> <br>
+					Check-in Time: &nbsp <input type="text" name="intime" size="20">
+					<select name="time">
+						<option value="morning" selected>AM</option>
+						<option value="afternoon">PM</option>
+					</select>
+					<br>
+					<br>
+					Check-out Date: &nbsp <input type="text" name="outdate" size="20" value="0"> <br>
+					Check-out Time: &nbsp <input type="text" name="outtime" size="20">
+					<select name="time">
+						<option value="morning" selected>AM</option>
+						<option value="afternoon">PM</option>
+					</select>
+					<br>
+					Special Instruction: <br>
+					<textarea rows="10" cols="70"> </textarea> <br>
+				</fieldset>
+			</form>
+		</div>
+		<br>
+		<form action="" method="">
+			<center> <input type="submit" value="Submit"> </center>
+		</form>
+	</body>
+</html>
