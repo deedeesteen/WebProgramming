@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="icon" href="Images/logo.png" type="image/icon type">
+	<link rel = "stylesheet" type = "text/css" href = "Navbar.css">
+	<link rel = "stylesheet" type = "text/css" href = "Services.css">
+	<link rel = "stylesheet" type = "text/css" href = "Footer.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
+	<title>Services</title>
+</head>
+<body>
+	<div id="navbar">
+		<h1 id="navText"> Fashion Sense </h1>
+		<img src="Images/logo.png" id="navImage">
+		<div class="links">
+			<center>
+			<a href="index.html" id="link"> Home </a>
+			<a href="aboutUs.html" id="link"> About Us </a>
+			<a href="services.html" id="link"> Services </a>
+			<a href="members.html" id="link"> Members </a>
+			</center>
+		</div>
+	</div>
+		
+	<section class="heading">
+		<h1> A service for every need </h1>
+		<center> <p>  Our services are geared towards helping your fashion related needs. <br> Our staff is trained, qualified and ready! </p> </center>
+	</section>
+	
+	<section id="serviceContent">
+		<div class="service1">
+			<img src="Images/service1.jpg">
+			<center> <h1 id="service"> Fashion Photography </h1> </center>
+			<p id="serviceInfo"> This is mainly aimed at companies looking to showcase new or existing designs. We will enjoy your product deserves the praise they deserve with breathtaking images. The cost and time of this service depends on the task. <br> <center> <span id="booking"> <b>Booking starts at US$250 per hour.<b></span></center> </p>
+		<center> <button id="request"> Request Service </button> </center>
+		</div>
+		
+		<div class="service2">
+			<img src="Images/review.gif">
+			<center> <h1 id="service"> Advertising </h1> </center>
+			<p id="serviceInfo"> Do you have a new product? With the use of our social media outlets and website gallery we will advertise it and give user feedbacks. This will give you an idea of if your product is wanted or loved by potential customers. Our time frame to completing this is One [1] Month. cost and time of this service depends on the task. <br> <center> <span id="booking"> <b>Cost: $US300.<b></span></center> </p>
+		<center> <button id="request2"> Request Service </button> </center>
+		</div>
+		
+		<div class="service3">
+			<img src="Images/market.png">
+			<center> <h1 id="service"> Reviews </h1> </center>
+			<p id="serviceInfo"> Need help with Analysing the market? Wecan help! We will conduct look into the size of the market both in volume and in value, the various customer segments and buying patterns and the competition. This will help you decide what your next product will be. <br> <center> <span id="booking"> <b>Cost: $US300.<b></span></center> </p>
+		<center> <button id="request3"> Request Service </button> </center>
+		</div>
+	</section>
+	
+	<section class="request_ser">
+	<div class="request_form">
+			<div id="close"> + </div>
+			<form method="post"  action = "MAILTO:fashionsense2019@gmail.com" enctype = "text/plain">
+			<center> <h2> Request A Service </h2> </center>
+				
+				<label for ="Name of Business"> Name of Business: </label> <br>
+				<input type="text" id="name" size="80" name="Name of Business" required>
+				<br> <br>
+				
+				<label for ="Name of Business Owner" > Name of Business Owner: </label> <br>
+				<input type="text" id="own_name" size="80" name="Name of Business Owner" required>
+				<br> <br>
+				
+				<label for "E-mail address" > E-mail address: </label><br> 
+				<input type="text" id="email" size="80" placeholder="example: someone@gmail.com" name="E-mail address" required>
+				<br> <br>
+				
+				<label for "Telephone number"> Telephone number: </label> <br> 
+				<input type="text" id="telenum" size="80" placeholder="example: 555-222-9999" name="Telephone number" required>
+				<br> <br>
+				
+				<div id="interests">
+					<label for ="Service"> Which service(s) are you interested in? <br> </b>
+				
+					<label for ="photoservice">
+					<input type="checkbox" id="photoservice" name="Service" value="250"> Fashion Photography <br>
+					</label>
+					<label for = "advertservice">
+					<input type="checkbox" id="advertservice" name="Service" value="300"> Advertising <br>
+					</label>
+					<label for ="reviewservice">
+					<input type="checkbox" id="reviewservice" name="Service" value="300"> Reviews <br>
+					</label>
+					</label>
+					<b> <label for "cost" >Cost Estimate in USD (for 1 hour of Photography, if ticked) = $</label> <input type="text" class="cost" size="25" name="cost" value="0" readonly>  <br> <br>
+				</div>
+				
+				<label for "Comments" >Comments: </label> <br>
+				<textarea rows="20" cols="73" name="Comments"> </textarea>
+				<br> <br>
+				
+				<center> <button type="submit"> Make Request </button> </center>  </b>
+			</form>
+	</div>
+	</section>
+		
+	<footer>
+		<img src="Images/logo.png" id="footerLogo">
+		<h1 id="copyright"> &copy Fashion Sense </h1>
+		<ul id="footerLinks">
+			<li> <a href="index.html"> Home </a> </li> <br>
+			<li> <a href="https://www.gloomaps.com/2FMGm9grb9"> Site Map </a> </li> <br>
+			<li> <a href="#"> Back to Top </a> </li>
+		</ul>
+	</footer>
+	
+	<script>
+	
+	document.getElementById('request').addEventListener('click', 
+		function()  {
+			document.querySelector('.request_ser').style.display = 'flex';
+		});
+		
+		document.getElementById('close').addEventListener('click', 
+		function()  {
+			document.querySelector('.request_ser').style.display = 'none';
+		});
+		
+		document.getElementById('request2').addEventListener('click', 
+		function()  {
+			document.querySelector('.request_ser').style.display = 'flex';
+		});
+		
+		document.getElementById('close').addEventListener('click', 
+		function()  {
+			document.querySelector('.request_ser').style.display = 'none';
+		});
+		
+		document.getElementById('request3').addEventListener('click', 
+		function()  {
+			document.querySelector('.request_ser').style.display = 'flex';
+		});
+		
+		document.getElementById('close').addEventListener('click', 
+		function()  {
+			document.querySelector('.request_ser').style.display = 'none';
+		});
+		
+		function calculations(){
+				var el = document.getElementById('interests');
+				var services = el.getElementsByTagName('input');
+				var len = services.length;
+				
+				for (var i = 0; i < len; i++) {
+					if (services[i].type === 'checkbox') {
+					services[i].onclick = updateCost;
+					}
+				}
+			};
+			
+		function updateCost() {
+			var myForm = this.form;
+			var val = parseFloat(myForm.elements['cost'].value);
+
+			if (this.checked) {
+				val += parseFloat(this.value);
+			} else {
+				val -= parseFloat(this.value);
+			}
+
+			myForm.elements['cost'].value = val;
+		};
+
+	calculations();
+	</script>
+</body>
+</html>
