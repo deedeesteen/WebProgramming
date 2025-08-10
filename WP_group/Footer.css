@@ -1,0 +1,39 @@
+footer{
+	height: 200px;
+	background-color: #F13C20;
+	position: relative;
+	background-color: #C5CBE3;
+	border-top: 2px solid #F13C20;
+}
+
+#footerLogo{
+	height: 70px;
+	position: absolute;
+	top: 25px;
+	left: 16%;
+}
+
+#copyright{
+	position: absolute;
+	top: 25px;
+	left: 23%;
+	color: #F13C20;
+	letter-spacing: 5px;
+	font-family: 'Lato', sans-serif;
+}
+
+#footerLinks{
+	list-style: none;
+	padding-top: 20px;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+footer a{
+	color: #F13C20;
+	text-decoration: none;
+}

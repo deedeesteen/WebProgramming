@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="icon" href="Images/logo.png" type="image/icon type">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
+		<link rel = "stylesheet" type = "text/css" href = "Navbar.css">
+		<link rel = "stylesheet" type = "text/css" href = "Members.css">
+		<link rel = "stylesheet" type = "text/css" href = "Footer.css">
+		<title>Meet our Team</title>
+	</head>
+<body>
+	<div id="navbar">
+		<h1 id="navText"> Fashion Sense </h1>
+		<img src="Images/logo.png" id="navImage">
+		<div class="links">
+			<center>
+			<a href="index.html" id="link"> Home </a>
+			<a href="aboutUs.html" id="link"> About Us </a>
+			<a href="services.html" id="link"> Services </a>
+			<a href="members.html" id="link"> Members </a>
+			</center>
+		</div>
+	</div>
+	
+	<section class="heading">
+		<h1> Meet the Team </h1>
+	</section>
+	
+	<section class="message">
+		<p> Fashion Sense is currently being operated by four board members. <br> Each Member of the Fashion Sense Team brings a certain level of experience and trait that guides the organization in the right direaction. </p>
+	</section>
+	
+	<section class="membersInfo">
+		<button id="mem1"> Celine Lobban</button>
+		<button id="mem2"> Donovan Saunches </button>
+		<button id="mem3"> Dhana Steen </button>
+		<button id="mem4"> Richard Gordon </button>
+		<h1 id="intro"> These are the persons who made Fashion Sense a reality! <br><br> <center>Click on a name to view their Bio.</center> </h1>
+		<div class="memberContainer1">
+			<img id="mainimage" src="Images/1.jpg">
+				<div class="member">
+					<h1 id="mem_name"> Celine Lobban </h1>
+					<p id="information"> 
+					Id#: 1704649  <br> <br> Age: 22 <br> <br> Nationality: Jamaican <br> <br> Courses:
+						<ol>
+							<li> Programming 2 </li>
+							<li> Web Programming </li>
+							<li> Discrete Mathematics </li>
+							<li> Computer Logics and Digital Design </li>
+							<li>  Enterprise Architecture and Infrastructure </li>
+						</ol> 
+					<span id="trait">Traits: <br> <br>
+						<ul>
+							<li> Hard Working </li>
+							<li> Confidence </li>
+							<li> Positivity </li>
+						</ul>
+					</p>
+					<button id="close"> Hide </button>
+				</div>
+		</div>
+		
+		<div class="memberContainer2">
+			<img id="mainimage" src="Images/2.jpg">
+				<div class="member">
+					<h1 id="mem_name"> Donovan Saunches </h1>
+					<p id="information"> 
+					Id#: 1804379  <br> <br> Age: 18 <br> <br> Nationality: Jamaican <br> <br> Courses:
+						<ol>
+							<li> Object Oriented Programming </li>
+							<li> Web Programming </li>
+							<li> Discrete Mathematics </li>
+							<li> Database Design </li>
+							<li> Academic Writing 1 </li>
+						</ol> 
+					<span id="trait">Traits: <br> <br>
+						<ul>
+							<li> Hard Working </li>
+							<li> Dedication </li>
+							<li> Positivity </li>
+						</ul>
+					</p>	
+					<button id="close2"> Hide </button>					
+				</div>
+		</div>
+		
+		<div class="memberContainer3">
+			<img id="mainimage" src="Images/3.jpg">
+				<div class="member">
+					
+					<h1 id="mem_name"> Dhana Steen </h1>
+					<p id="information"> 
+					Id#: 1803365  <br> <br> Age: 20 <br> <br> Nationality: Jamaican <br> <br> Courses:
+						<ol>
+							<li> Object Oriented Programming </li>
+							<li> Web Programming </li>
+							<li> Information Technology Project Management </li>
+							<li> Computer Logics and Digital Design </li>
+						</ol> 
+					<span id="trait">Traits: <br> <br>
+						<ul>
+							<li> Hard Working </li>
+							<li> Creativity </li>
+							<li> Determination </li>
+						</ul>
+					</p>	
+					<button id="close3"> Hide </button>
+				</div>
+		</div>
+		
+		<div class="memberContainer4">
+			<img id="mainimage" src="Images/4.jpg">
+				<div class="member">
+					<h1 id="mem_name"> Richard Gordon </h1>
+					<p id="information"> 
+					Id#: 1801462  <br> <br> Age: 20 <br> <br> Nationality: Jamaican <br> <br> Courses:
+						<ol>
+							<li> Programming 1 </li>
+							<li> Web Programming </li>
+							<li> Discete Mathematics </li>
+							<li> Introductory Statistics </li>
+						</ol> 
+					<span id="trait">Traits: <br> <br>
+						<ul>
+							<li> Courage </li>
+							<li> Critical Thinking </li>
+							<li> Determination </li>
+						</ul>
+					</p>	
+					<button id="close4"> Hide </button>
+				</div>
+		</div>
+	</section> 
+	
+	<footer>
+		<img src="Images/logo.png" id="footerLogo">
+		<h1 id="copyright"> &copy Fashion Sense </h1>
+		<ul id="footerLinks">
+			<li> <a href="index.html"> Home </a> </li>
+			<li> <a href="https://www.gloomaps.com/2FMGm9grb9"> Site Map </a> </li>
+			<li> <a href="#"> Back to Top </a> </li>
+		</ul>
+	</footer>
+
+	<script>
+		document.getElementById('mem1').addEventListener('click', 
+		function()  {
+			document.querySelector('.memberContainer1').style.display = 'flex';
+		});
+		
+		document.getElementById('close').addEventListener('click', 
+		function()  {
+			document.querySelector('.memberContainer1').style.display = 'none';
+		});
+		
+		document.getElementById('mem2').addEventListener('click', 
+		function()  {
+			document.querySelector('.memberContainer2').style.display = 'flex';
+		});
+		
+		document.getElementById('close2').addEventListener('click', 
+		function()  {
+			document.querySelector('.memberContainer2').style.display = 'none';
+		});
+		
+		document.getElementById('mem3').addEventListener('click', 
+		function()  {
+			document.querySelector('.memberContainer3').style.display = 'flex';
+		});
+		
+		document.getElementById('close3').addEventListener('click', 
+		function()  {
+			document.querySelector('.memberContainer3').style.display = 'none';
+		});
+		
+		document.getElementById('mem4').addEventListener('click', 
+		function()  {
+			document.querySelector('.memberContainer4').style.display = 'flex';
+		});
+		
+		document.getElementById('close4').addEventListener('click', 
+		function()  {
+			document.querySelector('.memberContainer4').style.display = 'none';
+		});
+		
+	</script>
+	
+</body>
+</html>
+		
+		

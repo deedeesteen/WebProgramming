@@ -1,0 +1,250 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.about_container{
+	margin: 0 auto;
+	padding: 0;
+	border: 2px solid #F13C20;
+	height: 500px;
+	background-image: url("Images/about.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.about_container h1{
+	text-align: center;
+	margin-top: 5%;
+	font-size: 100px;
+	font-family: 'Prata', serif;
+	color: #F13C20;
+}
+
+.about_container p{
+	text-align: center;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 20px;
+	color: black;
+}
+
+.mission_container{
+	position: relative;
+	top: 10px;
+	margin: 10px 20px 10px 20px;
+	height: 200px;
+	border-bottom: 3px solid #D79922;
+	width: 700px;
+}
+
+.mission_wrap{
+	border-radius: 100px;
+	height: 150px;
+	width: 150px;
+	background-color: #D79922;
+}
+
+.mission_wrap h1{
+	text-align: center;
+	margin: 20px;
+	font-family: 'Prata', serif;
+	font-size: 30px;
+	color: #EDF5E1;
+}
+
+.mission_container p{
+	position: relative;
+	top: -135px;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	color: black;
+	left: 200px;
+}
+
+.promise_container{
+	margin: 10px 20px 10px 20px;
+	position: relative;
+	left: 30%;
+	height: 200px;
+	border-bottom: 3px solid #D79922;
+	width: 700px;
+}
+
+.promise_wrap{
+	float: right;
+	margin: 20px;
+	border-radius: 100px;
+	height: 150px;
+	width: 150px;
+	background-color: #F13C20;
+}
+
+.promise_wrap h1{
+	text-align: center;
+	font-family: 'Prata', serif;
+	font-size: 30px;
+	color: #EDF5E1;
+}
+
+.promise_container p{
+	position: relative;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	color: black;
+	left: 90px;
+	top: 30px;
+}
+
+.history_container{
+	margin: 10px 20px 10px 20px;
+	height: 200px;
+	border-bottom: 3px solid #D79922;
+	width: 1000px;
+}
+
+.history_wrap{
+	margin: 20px;
+	border-radius: 100px;
+	height: 150px;
+	width: 150px;
+	background-color: #D79922;
+}
+
+.history_wrap h1{
+	text-align: center;
+	font-family: 'Prata', serif;
+	font-size: 30px;
+	color: #EDF5E1;
+}
+
+.history_container p{
+	position: relative;
+	top: -135px;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	color: black;
+	left: 200px;
+}
+
+.contact_container{
+	margin: 10px 20px 10px 20px;
+	position: relative;
+	left: 30%;
+	height: 200px;
+	border-bottom: 3px solid #D79922;
+	width: 700px;
+}
+
+.contact_wrap{
+	float: right;
+	margin: 20px;
+	border-radius: 100px;
+	height: 150px;
+	width: 150px;
+	background-color: #F13C20;
+}
+
+.contact_wrap h1{
+	text-align: center;
+	font-family: 'Prata', serif;
+	font-size: 30px;
+	color: #EDF5E1;
+}
+
+.contact_container p{
+	position: relative;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	color: black;
+	left: 20px;
+	top: 30px;
+}
+
+.contact_container button{
+	margin-left: 25px;
+	width: 45%;
+	height: 40px;
+	border: none;
+	outline: none;
+	background:  #3500D3;
+	color: #EDF5E1;
+	transition: 0.5s ease;
+	cursor: pointer;
+	position: relative;
+	left: 50px;
+	top: 30px;
+}
+
+.contact_container button:hover{
+	background-color: #F13C20;
+	color: #EDF5E1;
+}
+
+.location{
+	border-top: 2px solid #F13C20;
+	margin: 0 auto;
+	height: 550px;
+	background-image: url("Images/location.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.location_wrap{
+	border-top: 2px solid #F13C20;
+	height: 550px;
+	background-color: rgb(53,0,211,0.6);
+}
+
+.location_wrap h1{
+	margin-top: 40px;
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: 'Prata', serif;
+	letter-spacing: 20px;
+	color: #EDF5E1;
+	background:  #F13C20;
+	border: 1px solid  #F13C20;
+	border-radius: 25px;
+}
+
+.stuff{
+	margin: 0 auto;
+	background-image: url("Images/value.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	border: none;
+	border-radius: 100px;
+}
+
+
+.location p{
+	text-align: center;
+	position: relative;
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
+	color: #EDF5E1;
+	left: 30px;
+}
+
+#location{
+	font-size: 30px;
+	color: #EDF5E1;
+	background:  #F13C20;
+	border: 1px solid #C3073F;
+}
+
+#coninfo{
+	font-size: 20px;
+	color: #EDF5E1;
+	background:  #F13C20;
+	border: 1px solid #C3073F;
+	border-radius: 25px;
+}
+
+
+

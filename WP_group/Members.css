@@ -1,0 +1,280 @@
+body{
+	margin: 0 auto;
+	padding: 0;
+}
+
+.heading{
+	margin: 0 auto;
+	padding: 0;
+	border: 2px solid #F13C20;
+	height: 500px;
+	background-image: url("Images/members.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.heading h1{
+	text-align: center;
+	margin-top: 15%;
+	font-size: 100px;
+	font-family: 'Prata', serif;
+	color: #F13C20;
+}
+
+.message{
+	margin: 0;
+	padding: 0;
+	height: 400px;
+	text-align: center;
+	border: none;
+}
+
+.message p{
+	padding: 50px;
+	font-family: 'Prata', serif;
+	font-size: 20px;
+}
+
+.membersInfo{
+	height: 700px;
+	position: relative;
+	border: 1px solid #F13C20;
+}
+
+#mem1{
+	position: absolute;
+	top: 5%;
+	left: 0;
+	height: 100px;
+	width: 80px;
+	margin: 20px;
+	cursor: pointer;
+	border: 2px solid;
+	border-radius: 50px;
+	color: white;
+	font-family: 'Prata', serif;
+	background-color: #F13C20 ;
+}
+
+#mem1:hover{
+	background-color: #D79922;
+	color: white;
+}
+
+#mem2{
+	position: absolute;
+	top: 25%;
+	left: 0;
+	height: 100px;
+	width: 80px;
+	margin: 20px;
+	cursor: pointer;
+	border: 2px solid;
+	border-radius: 50px;
+	color: white;
+	font-family: 'Prata', serif;
+	background-color: #F13C20 ;
+}
+
+#mem2:hover{
+	background-color: #D79922;
+	color: white;
+}
+
+#mem3{
+	position: absolute;
+	top: 45%;
+	left: 0;
+	height: 100px;
+	width: 80px;
+	margin: 20px;
+	cursor: pointer;
+	border: 2px solid;
+	border-radius: 50px;
+	color: white;
+	font-family: 'Prata', serif;
+	background-color: #F13C20 ;
+}
+
+#mem3:hover{
+	background-color: #D79922;
+	color: white;
+}
+
+#mem4{
+	position: absolute;
+	top: 65%;
+	left: 0;
+	height: 100px;
+	width: 80px;
+	margin: 20px;
+	cursor: pointer;
+	border: 2px solid;
+	border-radius: 50px;
+	color: white;
+	font-family: 'Prata', serif;
+	background-color: #F13C20 ;
+}
+
+#mem4:hover{
+	background-color: #D79922;
+	color: white;
+}
+
+.messages button:hover{
+	background-color: #F13C20;
+	color: white;
+}
+
+.memberContainer1{
+	position: absolute;
+	top: 0;
+	border: 2px solid #F13C20;
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #C5CBE3;
+}
+
+#mainimage{
+	margin-top: 100px;
+	position: absolute;
+	right: 10%;
+	height: 500px;
+	width: 500px;
+	border-radius: 25px;
+}
+
+.member{
+	border: 1px solid;
+	margin-left: 200px;
+	width: 400px;
+	background-color: #242582;
+}
+
+#mem_name{
+	text-align: center;
+	margin-top: 15%;
+	font-size: 20px;
+	font-family: 'Prata', serif;
+	color: #F13C20;
+	
+}
+#information{
+	font-family: 'Prata', serif;
+	font-size: 15px;
+	padding: 20px;
+	color: white;
+}
+
+#trait{
+	font-family: 'Prata', serif;
+	font-size: 15px;
+	padding: 20px;
+	color: white;
+}
+
+ol, ul{
+	font-size: 15px;
+	font-family: 'Prata', serif;
+	color: white;
+}
+
+.memberContainer2{
+	position: absolute;
+	top: 0;
+	border: 2px solid #F13C20;
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #C5CBE3;
+}
+
+.memberContainer3{
+	position: absolute;
+	top: 0;
+	border: 2px solid #F13C20;
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #C5CBE3;
+}
+
+.memberContainer4{
+	position: absolute;
+	top: 0;
+	border: 2px solid #F13C20;
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #C5CBE3;
+}
+
+#close{
+	color: white;
+	width: 100%;
+	height: 40px;
+	font-family: 'Prata', serif;
+	background-color: #F13C20;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+#close:hover{
+	color: #242582;
+	background-color: white;
+}
+
+#close2{
+	color: white;
+	width: 100%;
+	height: 40px;
+	font-family: 'Prata', serif;
+	background-color: #F13C20;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+#close2:hover{
+	color: #242582;
+	background-color: white;
+}
+
+#close3{
+	color: white;
+	width: 100%;
+	height: 40px;
+	font-family: 'Prata', serif;
+	background-color: #F13C20;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+#close3:hover{
+	color: #242582;
+	background-color: white;
+}
+
+#close4{
+	color: white;
+	width: 100%;
+	height: 40px;
+	font-family: 'Prata', serif;
+	background-color: #F13C20;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+#close4:hover{
+	color: #242582;
+	background-color: white;
+}
+
+#intro{
+	position: absolute;
+	left: 25%;
+	top: 30%;
+	font-family: 'Prata', serif;
+	font-size: 30px;
+	color: #D79922;
+}

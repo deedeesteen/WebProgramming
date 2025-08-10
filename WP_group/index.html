@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="icon" href="Images/logo.png" type="image/icon type">
+	<link rel = "stylesheet" type = "text/css" href = "Navbar.css">
+	<link rel = "stylesheet" type = "text/css" href = "home.css">
+	<link rel = "stylesheet" type = "text/css" href = "Footer.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
+	<title>Fashion Sense</title>
+</head>
+<body>
+	<div id="navbar">
+		<h1 id="navText"> Fashion Sense </h1>
+		<img src="Images/logo.png" id="navImage">
+		<div class="links">
+			<center>
+			<a href="index.html" id="link"> Home </a>
+			<a href="aboutUs.html" id="link"> About Us </a>
+			<a href="services.html" id="link"> Services </a>
+			<a href="members.html" id="link"> Members </a>
+			</center>
+		</div>
+	</div>
+		
+	<section class="sec1">
+		<div class="sec1Wrap">
+			<h1 id="slogan"> <span id="be">Be</span> Bold <span id="be">Be</span> Brave <br> <span id="unique">Be Unique</span></span> </h1>
+		</div>
+	</section> 
+		
+	<section class="content">
+		<div class="contentWrap">
+			<div class="welcome">
+					<center> 
+				<img src="Images/logo.png"> 
+				<h1 id="welcomeMsg"> </h1>
+					</center>
+				<p> We are a group of professionals that activate and enhance our creative minds to aid you in any way we can.  To do this we use critical thinking and a learner-centered approach to give you the best results possible. Our Designers and Advisors try new ideas and discover what works for you and explains why it works. </p>
+				<button id="questions"> Questions? We can help </button>
+			</div>
+		</div>
+		<div class="feedback">
+	<div class="row " style="margin-top: 50px">
+    <div class="form-container">
+        <form method="post" id="feedback_form" action = "MAILTO:fashionsense2019@gmail.com" enctype = "text/plain">
+		<div id="close"> + </div>
+		<center> <h2>Feedback</h2> </center>
+        <p>
+            Please provide your feedback below:
+        </p>
+            <div class="row">
+                <div class="form-group">
+                <label>How do you rate your overall experience?</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="bad" >
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="average" >
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="good" >
+                    Good
+                    </label>
+                </p>
+                </div>
+            </div>
+			 <div class="row">
+                <div class="form-group">
+                    <label for="name">
+                        Your Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div> <br>
+                <div class="form-group">
+                    <label for="email">
+                        Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div> <br>
+            <div class="row">
+                <div class="form-group">
+                    <label for="comments">
+                        Comments/Questions:</label>
+                    <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                </div>
+            </div>
+			<div class="row"> <br>
+                <div class="col-sm-12 form-group">
+                  <center>  <button type="submit" class="send"> Send </button> </center>
+                </div>
+            </div>
+		</form>
+        </div>
+		</div>
+		</div>
+	</section>
+	
+	
+			
+	<footer>
+		<img src="Images/logo.png" id="footerLogo">
+		<h1 id="copyright"> &copy Fashion Sense </h1>
+		<ul id="footerLinks">
+			<li> <a href="index.html"> Home </a> </li>
+			<li> <a href="https://www.gloomaps.com/2FMGm9grb9"> Site Map </a> </li>
+			<li> <a href="#"> Back to Top </a> </li>
+		</ul>
+	</footer>
+	
+	<script>
+		var myDate = new Date();
+		var hrs = myDate.getHours();
+		
+		var greet;
+		
+		if (hrs < 12)
+			greet = 'Good Morning';
+		else if (hrs >=12 && hrs <=17)
+			greet = 'Good Afternoon';
+		 else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+		document.getElementById('welcomeMsg').innerHTML =
+        '<b>' + greet + '</b>! Welcome to Fashion Sense';
+		
+		document.getElementById('questions').addEventListener('click', 
+		function()  {
+			document.querySelector('.feedback').style.display = 'flex';
+		});
+		
+		document.getElementById('close').addEventListener('click', 
+		function()  {
+			document.querySelector('.feedback').style.display = 'none';
+		});
+	</script>
+</body>
+</html>
