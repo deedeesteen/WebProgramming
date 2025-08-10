@@ -1,0 +1,18 @@
+body{
+	background: purple;
+}
+
+div{
+	border: 2px solid indigo;
+	font-family: "Courier New", Courier;
+	background: plum;
+}
+
+h1{
+	font-family: "Courier New", Courier;
+	color: floralwhite;
+}
+
+h3{
+	color: rebeccapurple;
+}

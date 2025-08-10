@@ -1,0 +1,35 @@
+<!--Programmer: Dhana Steen
+	Class: Monday, 9-11am
+	
+	Variables are used for storage - program memory - they are reuseable
+	variable names must start eith an underscore ( _ ) or a letter
+	varaibles are case sensitive
+	
+	js is loosely typed language ie you do not have to identify the data type-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>JS Variables</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	</head>
+	
+	<body>
+		<script>
+			//must start with keyword "var"
+			var age;
+			var month = 10;
+			
+			//three types of variable data
+			var year = 2018;			//numeric ie numbers
+			var month = "October";		//string ie text and characters; must use quotation marks
+			var repeat = true;			//boolean ie true or false
+			
+			//alert is a javascript function
+			alert (month + year);	//function is the action or behaviour.  Where we work with our variables
+			
+			document.write(year);
+		</script>
+	</body>
+</html>
