@@ -1,0 +1,41 @@
+<!--Programmer: Dhana Steen
+	Class: Monday, 9-11am-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Class Selector</title>
+		<style>
+			<!--all elements with class="spacious"-->
+			.spacious
+			{
+				margin: 2em;
+			}
+			
+			<!--all <li> elements with class="spacious"-->
+			li.spacious
+			{
+				margin: 2em;
+			}
+			
+			<!--all <li> elements with a class list that includes both "spacious" and "elegant"-->
+			<!--eg. class="elegant retro elegant"-->
+			li.spacious.elegant
+			{
+				margin: 2em;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>CSS Selectors - Class</h1>
+		<h2 class="spacious">There are three (3) different ways you can select HTML elements for styling.</h2>
+		<ul>
+			<li class="elegant">Class - In this method you can assign different classes to our elements.</li>
+			<li class="spacious">Each element can have multiple classes,and each class can also be applied to multiple elements.</li>
+			<li>You must assign the class className to the element using “=“.</li>
+			<li>In the stylesheet you select the class using <b>.className</b> format.</li>
+			<li>Matches elements based on the contents of their class attribute.</li>
+
+	</body>
+</html>
